@@ -8,10 +8,10 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:cloudflare": "opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "build": "next build && opennextjs-cloudflare build --skipNextBuild",
+    "build:cloudflare": "npm run build",
+    "preview": "npm run build && opennextjs-cloudflare preview",
+    "deploy": "npm run build && opennextjs-cloudflare deploy",
     "start": "next start",
     "test": "node --test tests/planner.test.js"
   },
