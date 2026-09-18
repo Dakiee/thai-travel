@@ -8,6 +8,12 @@ export const metadata = {
   title: 'Our Thailand trip · January 2027',
   description: 'Our personal Thailand trip plan for 16 January–1 February 2027: Bangkok, Ao Nang, Koh Lanta, Koh Phi Phi and Phuket.',
   icons: { icon: '/icon.svg' },
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: { index: false, follow: false, noimageindex: true },
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -9,7 +9,9 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000). The site is split into Overview, Itinerary, Stays, Transport, and Budget pages.
+
+The internal `/print` route combines those pages into one print-ready document and uses the saved trip settings from the browser.
 
 ```bash
 npm test       # itinerary, date and budget tests
@@ -56,6 +58,6 @@ Trip state is shared across the routes, so currency, occupancy, room count and d
 - `tests/planner.test.js` verifies dates, stays, links and budget math.
 - `ITINERARY.md` is the readable default plan.
 
-The old static HTML entry point, browser script and custom Node server were removed during the Next.js migration. `Thailand-itinerary.pdf` is an older artifact; use the app’s **Print / save as PDF** action for the current plan.
+The old static HTML entry point, browser script and custom Node server were removed during the Next.js migration. `Thailand-itinerary.pdf` is generated from the current six-stop plan.
 
 Fonts and illustrative destination photos load from Google Fonts and Unsplash. Trip settings stay in the current browser’s local storage.
