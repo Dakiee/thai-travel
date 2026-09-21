@@ -7,7 +7,7 @@ import Icon from './Icon';
 const P = planner;
 const STORAGE_KEY = 'our-thailand-trip-v1';
 const LEGACY_STORAGE_KEY = 'little-thailand-v1';
-export const defaultTripState = { duration: 17, adults: 2, rooms: 1, style: 'value', currency: 'MNT', start: '2027-01-16', usdRate: 35, mntRate: 100, routeVersion: 3 };
+export const defaultTripState = { duration: 17, adults: 5, rooms: 3, style: 'value', currency: 'MNT', start: '2027-01-16', usdRate: 35, mntRate: 100, routeVersion: 4 };
 const TripContext = createContext(null);
 
 function loadSavedState() {
@@ -17,7 +17,7 @@ function loadSavedState() {
     if (!Number.isFinite(saved.usdRate) || saved.usdRate < 1 || saved.usdRate > 1000) return defaultTripState;
     if (!Number.isFinite(saved.mntRate) || saved.mntRate < 1 || saved.mntRate > 10000) return defaultTripState;
     const candidate = { ...defaultTripState, style: saved.style, currency: saved.currency, usdRate: saved.usdRate, mntRate: saved.mntRate };
-    if (saved.routeVersion === 3) {
+    if (saved.routeVersion === 4) {
       candidate.adults = saved.adults;
       candidate.rooms = saved.rooms;
       if (/^2027-01-\d{2}$/.test(saved.start) && saved.start >= '2027-01-01' && saved.start <= '2027-01-31') candidate.start = saved.start;
@@ -81,8 +81,8 @@ export function TripProvider({ children }) {
       `${state.adults} adults · ${state.rooms} room${state.rooms > 1 ? 's' : ''} · ${P.styles[state.style].label}`,
       '', 'OUR STAYS',
       ...P.stops.flatMap(stop => [
-        `${stop.city}: ${dateLabel(stop.offset)} – ${dateLabel(stop.offset + stop.nights)} · ${stop.nights} nights · ${money(current.config[stop.key])} / room / night (estimate)`,
-        ...Object.entries(stop.links).map(([name, url]) => `  ${name}: ${url}`),
+        `${stop.city}: ${stop.hotel || 'Hotel pending'} · ${dateLabel(stop.offset)} – ${dateLabel(stop.offset + stop.nights)} · ${stop.nights} nights · ${stop.guestNote || `${stop.guests} people`}`,
+        ...(!stop.hotel ? Object.entries(stop.links).map(([name, url]) => `  ${name}: ${url}`) : []),
       ]),
       '', 'OUR FLIGHTS & FERRIES — PER PERSON',
       ...P.transfers.map(transfer => `${dateLabel(transfer.offset)} · ${transfer.title}: ${priceRange(transfer.min, transfer.max)}. ${transfer.note} Link: ${transfer.url}`),

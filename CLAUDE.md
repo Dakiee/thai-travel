@@ -20,7 +20,7 @@ There is no linter or TypeScript config.
 
 ## Architecture
 
-- **`planner.js`** (repo root) is the source of truth for all trip data and budget math: `sources`, `days`, `stops` (six stays with nights/offsets and hardcoded Booking/Agoda/Airbnb/Trip search URLs), `transfers` (2 flights + 3 ferries), `styles` (`value` / `comfort` price tables), `itinerary()`, `calculate()`, and `dateAt()`.
+- **`planner.js`** (repo root) is the source of truth for all trip data and budget math: `sources`, `days`, `stops` (six stays with hotel names, photos, guests, nights/offsets and hardcoded search URLs), `places` and `legs` (Leaflet map data), `transfers` (2 flights + 3 ferries), `styles` (`value` / `comfort` price tables), `itinerary()`, `calculate()`, and `dateAt()`.
   - It is a UMD-style IIFE: exports via `module.exports` (so the CommonJS tests can `require` it) and otherwise sets `globalThis.TravelPlanner`. `app/page.js` default-imports it. Keep it in this form, not ESM `export`.
   - The file defines `days` in an object literal, then **patches and redefines many days further down** (after `transfers`). The later assignments win, so check the bottom of the file before editing a day's text.
   - `itinerary()` only accepts `duration === 17`; the day order is a fixed ID list. `calculate()` validates 1–8 adults and 1–2 adults per room, and throws `RangeError` otherwise.

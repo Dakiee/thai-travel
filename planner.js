@@ -84,42 +84,74 @@
     ], 'The 10–14 days describe the sample calendar plan. Overnight connections may extend the time away; settle the flights before booking hotels.')
   };
   const stops = [
-    { city: 'Bangkok', key: 'bangkok', nights: 3, offset: 0, description: 'Temples, riverside walks and street food.', area: 'Silom or Sathorn near BTS/MRT', links: {
+    { city: 'Bangkok', key: 'bangkok', nights: 3, offset: 0, placeId: 'ordinary', hotel: 'Hotel Ordinary Bangkok', guests: 5, bookingNote: '2 king rooms + extra bed. Cash deposit at check-in.', image: 'https://images.trvl-media.com/lodging/45000000/44520000/44516500/44516467/9836597a.jpg?impolicy=resizecrop&ra=fill&rh=575&rw=575', imageAlt: 'The illuminated Hotel Ordinary Bangkok sign and entrance', imageCredit: 'Expedia', imageCreditUrl: 'https://www.expedia.com.my/Bangkok-Hotels-Hotel-Ordinary-Bangkok.h44516467.Hotel-Information', description: 'Temples, riverside walks and street food.', area: 'Ratchaprarop, Bangkok', links: {
       Booking: 'https://www.booking.com/searchresults.html?ss=Bangkok&checkin=2027-01-16&checkout=2027-01-19&group_adults=2',
       Agoda: 'https://www.agoda.com/search?textToSearch=Bangkok&checkIn=2027-01-16&checkOut=2027-01-19&adults=2&rooms=1',
       Airbnb: 'https://www.airbnb.com/s/Bangkok--Thailand/homes?checkin=2027-01-16&checkout=2027-01-19&adults=2',
       Trip: 'https://www.trip.com/hotels/list?keyword=Bangkok&checkin=2027-01-16&checkout=2027-01-19&adult=2'
     } },
-    { city: 'Ao Nang (Krabi)', key: 'krabi', nights: 3, offset: 3, description: 'Longtail boats, Railay and a day on the islands.', area: 'Ao Nang, walking distance to the beach and restaurants', links: {
+    { city: 'Ao Nang (Krabi)', key: 'krabi', nights: 3, offset: 3, placeId: 'ibis', hotel: 'ibis Styles Krabi Ao Nang', guests: 5, bookingNote: '2 rooms + extra bed.', image: 'https://www.ahstatic.com/photos/7020_ho_01_p_2048x1536.jpg', imageAlt: 'The entrance and exterior of ibis Styles Krabi Ao Nang', imageCredit: 'Accor', imageCreditUrl: 'https://all.accor.com/hotel/7020/index.en.shtml', description: 'Longtail boats, Railay and a day on the islands.', area: 'Ao Nang', links: {
       Booking: 'https://www.booking.com/searchresults.html?ss=Ao+Nang&checkin=2027-01-19&checkout=2027-01-22&group_adults=2',
       Agoda: 'https://www.agoda.com/search?textToSearch=Ao%20Nang&checkIn=2027-01-19&checkOut=2027-01-22&adults=2&rooms=1',
       Airbnb: 'https://www.airbnb.com/s/Ao-Nang--Thailand/homes?checkin=2027-01-19&checkout=2027-01-22&adults=2',
       Trip: 'https://www.trip.com/hotels/list?keyword=Ao%20Nang&checkin=2027-01-19&checkout=2027-01-22&adult=2'
     } },
-    { city: 'Koh Lanta', key: 'lanta', nights: 2, offset: 6, description: 'Slow beach mornings and sunset dinners.', area: 'Klong Dao or Long Beach', links: {
+    { city: 'Koh Lanta', key: 'lanta', nights: 2, offset: 6, placeId: 'rattana', hotel: 'Rattana Resort, Lanta Noi', guests: 5, bookingNote: 'Paid. About 3 km from Saladan over the bridge. Rents motorbikes.', image: 'https://pix4.agoda.net/hotelimages/2005113/-1/b02ff3c1569621536505f43903ff45be.jpg?ca=11&ce=1&s=1024x768', imageAlt: 'A guest room at Rattana Resort on Koh Lanta Noi', imageCredit: 'Agoda', imageCreditUrl: 'https://www.agoda.com/en-in/h52225144/hotel/koh-lanta-th.html', description: 'Slow beach mornings and sunset dinners.', area: 'Koh Lanta Noi', links: {
       Booking: 'https://www.booking.com/searchresults.html?ss=Koh+Lanta&checkin=2027-01-22&checkout=2027-01-24&group_adults=2',
       Agoda: 'https://www.agoda.com/search?textToSearch=Koh%20Lanta&checkIn=2027-01-22&checkOut=2027-01-24&adults=2&rooms=1',
       Airbnb: 'https://www.airbnb.com/s/Koh-Lanta--Thailand/homes?checkin=2027-01-22&checkout=2027-01-24&adults=2',
       Trip: 'https://www.trip.com/hotels/list?keyword=Koh%20Lanta&checkin=2027-01-22&checkout=2027-01-24&adult=2'
     } },
-    { city: 'Koh Phi Phi', key: 'phiPhi', nights: 2, offset: 8, description: 'Island walks, viewpoints and time on the water.', area: 'Near Tonsai for easy ferry access; check noise reviews', links: {
+    { city: 'Koh Phi Phi', key: 'phiPhi', nights: 2, offset: 8, placeId: 'donchukit', hotel: 'Phi Phi Don Chukit Resort', guests: 7, guestNote: '5 → 7 people', bookingNote: '2 twins, plus an extra room on 25 Jan.', image: 'https://phiphidonchukitresort.site/_astro/2.5ky02K6R_C6uVS.webp', imageAlt: 'Tropical bungalows at Phi Phi Don Chukit Resort', imageCredit: 'Phi Phi Don Chukit Resort', imageCreditUrl: 'https://phiphidonchukitresort.site/', description: 'Island walks, viewpoints and time on the water.', area: 'Tonsai Bay, Koh Phi Phi', links: {
       Booking: 'https://www.booking.com/searchresults.html?ss=Koh+Phi+Phi&checkin=2027-01-24&checkout=2027-01-26&group_adults=2',
       Agoda: 'https://www.agoda.com/search?textToSearch=Koh%20Phi%20Phi&checkIn=2027-01-24&checkOut=2027-01-26&adults=2&rooms=1',
       Airbnb: 'https://www.airbnb.com/s/Koh-Phi-Phi--Thailand/homes?checkin=2027-01-24&checkout=2027-01-26&adults=2',
       Trip: 'https://www.trip.com/hotels/list?keyword=Koh%20Phi%20Phi&checkin=2027-01-24&checkout=2027-01-26&adult=2'
     } },
-    { city: 'Phuket', key: 'phuket', nights: 4, offset: 10, description: 'Old Town, beach days and one last sunset.', area: 'Old Town for cafés, or Kata for a beach base', links: {
+    { city: 'Phuket', key: 'phuket', nights: 4, offset: 10, placeId: 'kata', hotel: null, guests: 7, bookingNote: 'Not booked yet.', description: 'Old Town, beach days and one last sunset.', area: 'Kata area placeholder', links: {
       Booking: 'https://www.booking.com/searchresults.html?ss=Phuket&checkin=2027-01-26&checkout=2027-01-30&group_adults=2',
       Agoda: 'https://www.agoda.com/search?textToSearch=Phuket&checkIn=2027-01-26&checkOut=2027-01-30&adults=2&rooms=1',
       Airbnb: 'https://www.airbnb.com/s/Phuket--Thailand/homes?checkin=2027-01-26&checkout=2027-01-30&adults=2',
       Trip: 'https://www.trip.com/hotels/list?keyword=Phuket&checkin=2027-01-26&checkout=2027-01-30&adult=2'
     } },
-    { city: 'Bangkok', key: 'bangkok', nights: 2, offset: 14, description: 'A final two-night buffer before the journey home.', area: 'Near BTS/MRT, or near your departure airport for an early flight', links: {
+    { city: 'Bangkok', key: 'bangkok', nights: 2, offset: 14, placeId: 'baiyoke', hotel: 'Baiyoke Sky Hotel', guests: 7, bookingNote: '3 rooms + extra bed. Pratunam Market is next door.', image: 'https://api.jtrholidays.com/storage/5114/baioke-hotel1.webp?tr=w-1024%2Cf-webp%2Cq-80', imageAlt: 'Baiyoke Sky Hotel rising above the Bangkok skyline', imageCredit: 'JTR Holidays', imageCreditUrl: 'https://www.jtrholidays.com/activity/baiyoke-observation-deck', description: 'A final two-night buffer before the journey home.', area: 'Pratunam, Bangkok', links: {
       Booking: 'https://www.booking.com/searchresults.html?ss=Bangkok&checkin=2027-01-30&checkout=2027-02-01&group_adults=2',
       Agoda: 'https://www.agoda.com/search?textToSearch=Bangkok&checkIn=2027-01-30&checkOut=2027-02-01&adults=2&rooms=1',
       Airbnb: 'https://www.airbnb.com/s/Bangkok--Thailand/homes?checkin=2027-01-30&checkout=2027-02-01&adults=2',
       Trip: 'https://www.trip.com/hotels/list?keyword=Bangkok&checkin=2027-01-30&checkout=2027-02-01&adult=2'
     } }
+  ];
+  const places = [
+    { id: 'bkk', stop: 'bangkok', type: 'airport', lat: 13.6818969, lng: 100.7468694, name: 'Suvarnabhumi Airport', when: 'Arrive 16 Jan · fly home 1 Feb', note: 'Airport Rail Link to Ratchaprarop, five minutes from both Bangkok hotels.' },
+    { id: 'ordinary', stop: 'bangkok', type: 'hotel', lat: 13.7561251, lng: 100.5431889, name: 'Hotel Ordinary Bangkok', when: '16–19 Jan · 3 nights', note: '2 king rooms + extra bed. Cash deposit at check-in.' },
+    { id: 'kbv', stop: 'krabi', type: 'airport', lat: 8.0992802, lng: 98.9831948, name: 'Krabi Airport', when: '19 Jan', note: 'About 40 minutes by taxi to Ao Nang.' },
+    { id: 'ibis', stop: 'krabi', type: 'hotel', lat: 8.0341379, lng: 98.8312381, name: 'ibis Styles Krabi Ao Nang', when: '19–22 Jan · 3 nights', note: '2 rooms + extra bed.' },
+    { id: 'nopparat', stop: 'krabi', type: 'pier', lat: 8.0474397, lng: 98.7986249, name: 'Nopparat Thara Pier', when: '22 Jan', note: 'Ferry to Koh Lanta.' },
+    { id: 'saladan', stop: 'lanta', type: 'pier', lat: 7.648269, lng: 99.041702, name: 'Saladan Pier', when: 'Arrive 22 Jan · leave 24 Jan', note: 'Agree the taxi price first, or use the resort pickup.' },
+    { id: 'rattana', stop: 'lanta', type: 'hotel', lat: 7.6729114, lng: 99.0453522, name: 'Rattana Resort, Lanta Noi', when: '22–24 Jan · 2 nights', note: 'Paid. About 3 km from Saladan over the bridge. Rents motorbikes.' },
+    { id: 'tonsai', stop: 'phiphi', type: 'pier', lat: 7.7402, lng: 98.7712, name: 'Tonsai Pier', when: 'Arrive 24 Jan · leave 26 Jan', note: 'No cars on the island. Walk or use a luggage porter.' },
+    { id: 'donchukit', stop: 'phiphi', type: 'hotel', lat: 7.7365495, lng: 98.7745366, name: 'Phi Phi Don Chukit Resort', when: '24–26 Jan · 2 nights', note: '2 twins, plus an extra room on 25 Jan.' },
+    { id: 'rassada', stop: 'phuket', type: 'pier', lat: 7.8730296, lng: 98.4145428, name: 'Rassada Pier', when: '26 Jan', note: 'About 40 minutes to Kata or Patong.' },
+    { id: 'kata', stop: 'phuket', type: 'hotel', lat: 7.8206945, lng: 98.2976473, name: 'Phuket stay (Kata area)', when: '26–30 Jan · 4 nights', note: 'Not booked yet.', tbd: true },
+    { id: 'hkt', stop: 'phuket', type: 'airport', lat: 8.1053402, lng: 98.305429, name: 'Phuket Airport', when: '30 Jan', note: 'About one hour from Kata. Leave early.' },
+    { id: 'baiyoke', stop: 'bangkok', type: 'hotel', lat: 13.7541027, lng: 100.5403735, name: 'Baiyoke Sky Hotel', when: '30 Jan–1 Feb · 2 nights', note: '3 rooms + extra bed. Pratunam Market is next door.' }
+  ];
+  const legs = [
+    ['bkk', 'ordinary', 'ground', 'Suvarnabhumi Airport → Hotel Ordinary · Airport Rail Link or taxi'],
+    ['ordinary', 'bkk', 'ground', 'Hotel Ordinary → Bangkok airport · Airport Rail Link or taxi'],
+    ['bkk', 'kbv', 'flight', 'Bangkok → Krabi · domestic flight'],
+    ['kbv', 'ibis', 'ground', 'Krabi Airport → ibis Styles · taxi or prebooked van'],
+    ['ibis', 'nopparat', 'ground', 'ibis Styles → Nopparat Thara Pier · taxi or hotel transfer'],
+    ['nopparat', 'saladan', 'ferry', 'Nopparat Thara Pier → Saladan Pier · ferry'],
+    ['saladan', 'rattana', 'ground', 'Saladan Pier ↔ Rattana Resort · taxi or resort pickup'],
+    ['saladan', 'tonsai', 'ferry', 'Saladan Pier → Tonsai Pier · ferry'],
+    ['tonsai', 'donchukit', 'walk', 'Tonsai Pier ↔ Don Chukit Resort · walk or luggage porter'],
+    ['tonsai', 'rassada', 'ferry', 'Tonsai Pier → Rassada Pier · ferry'],
+    ['rassada', 'kata', 'ground', 'Rassada Pier → Kata · taxi or prebooked van'],
+    ['kata', 'hkt', 'ground', 'Kata → Phuket Airport · taxi or prebooked van'],
+    ['hkt', 'bkk', 'flight', 'Phuket → Bangkok · domestic flight'],
+    ['bkk', 'baiyoke', 'ground', 'Bangkok airport → Baiyoke Sky · Airport Rail Link or taxi'],
+    ['baiyoke', 'bkk', 'ground', 'Baiyoke Sky → Suvarnabhumi Airport · Airport Rail Link or taxi']
   ];
   const transfers = [
     { id: 'flySouth', offset: 3, title: 'Bangkok → Krabi', route: 'BKK / DMK → KBV', mode: 'Flight', min: 2000, max: 3500, status: 'Planning allowance', note: 'Search for 19 January 2027. Confirm baggage and which Bangkok airport is used before booking.', url: 'https://12go.asia/en/avia/bangkok/krabi?date=2027-01-19', source: '12Go · Bangkok to Krabi' },
@@ -184,7 +216,7 @@
     d.setUTCDate(d.getUTCDate() + offset);
     return d;
   }
-  const api = { researchDate, sources, itinerary, calculate, dateAt, styles, stops, transfers };
+  const api = { researchDate, sources, itinerary, calculate, dateAt, styles, stops, places, legs, transfers };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.TravelPlanner = api;
 })(typeof globalThis !== 'undefined' ? globalThis : this);

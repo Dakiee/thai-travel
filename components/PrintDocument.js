@@ -17,18 +17,18 @@ export default function PrintDocument() {
           <span>17 days · 16 nights</span>
           <span>{state.adults} adults · {state.rooms} room{state.rooms > 1 ? 's' : ''}</span>
         </div>
-        <p className="print-disclaimer">Working plan generated from our travel board. Prices are estimates until booked.</p>
+        <p className="print-disclaimer">Hotel names reflect our bookings. Remaining prices are working estimates.</p>
       </section>
 
       <section className="print-section">
         <div className="print-section-heading"><span>01</span><div><p className="eyebrow green">AT A GLANCE</p><h2>Our route and stays.</h2></div></div>
-        <div className="print-stops">{P.stops.map((stop, index) => <article key={`${stop.city}-${stop.offset}`}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{stop.city}</h3><p>{dateLabel(stop.offset)} → {dateLabel(stop.offset + stop.nights)} · {stop.nights} night{stop.nights > 1 ? 's' : ''}</p><small>{stop.area}</small></div></article>)}</div>
+        <div className="print-stops">{P.stops.map((stop, index) => <article key={`${stop.city}-${stop.offset}`}><span>{String(index + 1).padStart(2, '0')}</span><div><h3>{stop.city}</h3><p>{dateLabel(stop.offset)} → {dateLabel(stop.offset + stop.nights)} · {stop.nights} night{stop.nights > 1 ? 's' : ''}</p><small>{stop.hotel || 'Hotel details pending'} · {stop.guestNote || `${stop.guests} people`}</small></div></article>)}</div>
       </section>
 
       <section className="print-section print-page-break">
-        <div className="print-section-heading"><span>02</span><div><p className="eyebrow green">PLACES TO STAY</p><h2>Our accommodation searches.</h2></div></div>
-        <p className="print-lead">These links contain the original fixed dates for two adults. Recheck the dates, cancellation policy, taxes and final total before paying.</p>
-        <div className="print-stay-grid">{P.stops.map(stop => <article className="print-stay" key={`${stop.city}-${stop.offset}`}><div><h3>{stop.city}</h3><p>{dateLabel(stop.offset)} → {dateLabel(stop.offset + stop.nights)} · {stop.nights} nights</p></div><strong>{money(current.config[stop.key])}<small> / room / night estimate</small></strong><p>{stop.area}</p><div>{Object.entries(stop.links).map(([name, url]) => <a href={url} target="_blank" rel="noopener noreferrer" key={name}>{name} ↗</a>)}</div></article>)}</div>
+        <div className="print-section-heading"><span>02</span><div><p className="eyebrow green">PLACES TO STAY</p><h2>Our booked hotels.</h2></div></div>
+        <p className="print-lead">The named properties are booked. Phuket hotel details are still pending.</p>
+        <div className="print-stay-grid">{P.stops.map(stop => <article className="print-stay" key={`${stop.city}-${stop.offset}`}><div><h3>{stop.city}</h3><p>{dateLabel(stop.offset)} → {dateLabel(stop.offset + stop.nights)} · {stop.nights} nights</p></div><strong>{stop.hotel || 'Hotel pending'}<small> · {stop.hotel ? 'booked' : 'not yet added'}</small></strong><p>{stop.guestNote || `${stop.guests} people`} · {stop.area}</p>{!stop.hotel && <div>{Object.entries(stop.links).map(([name, url]) => <a href={url} target="_blank" rel="noopener noreferrer" key={name}>{name} ↗</a>)}</div>}</article>)}</div>
       </section>
 
       <section className="print-section print-page-break">

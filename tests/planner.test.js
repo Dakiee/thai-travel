@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { calculate, itinerary, dateAt, stops, transfers } = require('../planner.js');
+const { calculate, itinerary, dateAt, stops, places, legs, transfers } = require('../planner.js');
 
 test('the six stays cover exactly sixteen nights in the requested order', () => {
   assert.deepEqual(stops.map(s => [s.city,s.nights,s.offset]), [
@@ -17,6 +17,32 @@ test('the six stays cover exactly sixteen nights in the requested order', () => 
   assert.equal(trip.rooms,1);
   assert.equal(trip.breakdown.find(r=>r.key==='hotels').amount,28800);
   assert.equal(trip.total,135124);
+});
+
+test('booked hotels and changing group size are attached to each stay', () => {
+  assert.deepEqual(stops.map(s => [s.hotel, s.guests, s.guestNote || null]), [
+    ['Hotel Ordinary Bangkok', 5, null],
+    ['ibis Styles Krabi Ao Nang', 5, null],
+    ['Rattana Resort, Lanta Noi', 5, null],
+    ['Phi Phi Don Chukit Resort', 7, '5 → 7 people'],
+    [null, 7, null],
+    ['Baiyoke Sky Hotel', 7, null]
+  ]);
+  assert.ok(stops.filter(stop => stop.hotel).every(stop => stop.image && stop.imageAlt && stop.imageCreditUrl));
+});
+
+test('trip map contains hotels, piers, airports and every door-to-door connection', () => {
+  assert.equal(places.filter(place => place.type === 'hotel').length, 6);
+  assert.equal(places.filter(place => place.type === 'pier').length, 4);
+  assert.equal(places.filter(place => place.type === 'airport').length, 3);
+  assert.equal(places.find(place => place.id === 'kata').tbd, true);
+  assert.equal(legs.length, 15);
+  assert.deepEqual(legs.reduce((counts, leg) => ({ ...counts, [leg[2]]: (counts[leg[2]] || 0) + 1 }), {}), {
+    ground: 9, flight: 2, ferry: 3, walk: 1
+  });
+  assert.ok(legs.every(leg => leg[3] && leg[3].includes('·')));
+  const ids = new Set(places.map(place => place.id));
+  for (const [from, to] of legs) assert.ok(ids.has(from) && ids.has(to));
 });
 
 test('transfer dates match the itinerary and span January into February', () => {

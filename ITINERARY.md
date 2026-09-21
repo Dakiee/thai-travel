@@ -1,19 +1,23 @@
 # Thailand · 16 January–1 February 2027
 
-17 days · 16 nights · 2 adults · 1 room
+17 days · 16 nights · 5 people, growing to 7 at Phi Phi
 
-| Stop | Nights | Dates |
-|---|---:|---|
-| Bangkok | 3 | 16–19 Jan |
-| Ao Nang (Krabi) | 3 | 19–22 Jan |
-| Koh Lanta | 2 | 22–24 Jan |
-| Koh Phi Phi | 2 | 24–26 Jan |
-| Phuket | 4 | 26–30 Jan |
-| Bangkok | 2 | 30 Jan–1 Feb |
+| Stop | Hotel | Guests | Nights | Dates |
+|---|---|---:|---:|---|
+| Bangkok | Hotel Ordinary Bangkok | 5 | 3 | 16–19 Jan |
+| Ao Nang (Krabi) | ibis Styles Krabi Ao Nang | 5 | 3 | 19–22 Jan |
+| Koh Lanta | Rattana Resort, Lanta Noi | 5 | 2 | 22–24 Jan |
+| Koh Phi Phi | Phi Phi Don Chukit Resort | 5 → 7 | 2 | 24–26 Jan |
+| Phuket | To be added | 7 | 4 | 26–30 Jan |
+| Bangkok | Baiyoke Sky Hotel | 7 | 2 | 30 Jan–1 Feb |
 
-## Accommodation searches
+## Accommodation
+
+The named hotels below are booked. Phuket hotel details have not been added yet.
 
 ### Bangkok · 16–19 Jan
+
+**Hotel Ordinary Bangkok · 5 people · booked**
 
 - [Booking](https://www.booking.com/searchresults.html?ss=Bangkok&checkin=2027-01-16&checkout=2027-01-19&group_adults=2)
 - [Agoda](https://www.agoda.com/search?textToSearch=Bangkok&checkIn=2027-01-16&checkOut=2027-01-19&adults=2&rooms=1)
@@ -22,12 +26,16 @@
 
 ### Ao Nang · 19–22 Jan
 
+**ibis Styles Krabi Ao Nang · 5 people · booked**
+
 - [Booking](https://www.booking.com/searchresults.html?ss=Ao+Nang&checkin=2027-01-19&checkout=2027-01-22&group_adults=2)
 - [Agoda](https://www.agoda.com/search?textToSearch=Ao%20Nang&checkIn=2027-01-19&checkOut=2027-01-22&adults=2&rooms=1)
 - [Airbnb](https://www.airbnb.com/s/Ao-Nang--Thailand/homes?checkin=2027-01-19&checkout=2027-01-22&adults=2)
 - [Trip](https://www.trip.com/hotels/list?keyword=Ao%20Nang&checkin=2027-01-19&checkout=2027-01-22&adult=2)
 
 ### Koh Lanta · 22–24 Jan
+
+**Rattana Resort, Lanta Noi · 5 people · booked**
 
 - [Booking](https://www.booking.com/searchresults.html?ss=Koh+Lanta&checkin=2027-01-22&checkout=2027-01-24&group_adults=2)
 - [Agoda](https://www.agoda.com/search?textToSearch=Koh%20Lanta&checkIn=2027-01-22&checkOut=2027-01-24&adults=2&rooms=1)
@@ -36,6 +44,8 @@
 
 ### Koh Phi Phi · 24–26 Jan
 
+**Phi Phi Don Chukit Resort · 5 → 7 people · booked**
+
 - [Booking](https://www.booking.com/searchresults.html?ss=Koh+Phi+Phi&checkin=2027-01-24&checkout=2027-01-26&group_adults=2)
 - [Agoda](https://www.agoda.com/search?textToSearch=Koh%20Phi%20Phi&checkIn=2027-01-24&checkOut=2027-01-26&adults=2&rooms=1)
 - [Airbnb](https://www.airbnb.com/s/Koh-Phi-Phi--Thailand/homes?checkin=2027-01-24&checkout=2027-01-26&adults=2)
@@ -43,12 +53,16 @@
 
 ### Phuket · 26–30 Jan
 
+**Hotel details pending · 7 people**
+
 - [Booking](https://www.booking.com/searchresults.html?ss=Phuket&checkin=2027-01-26&checkout=2027-01-30&group_adults=2)
 - [Agoda](https://www.agoda.com/search?textToSearch=Phuket&checkIn=2027-01-26&checkOut=2027-01-30&adults=2&rooms=1)
 - [Airbnb](https://www.airbnb.com/s/Phuket--Thailand/homes?checkin=2027-01-26&checkout=2027-01-30&adults=2)
 - [Trip](https://www.trip.com/hotels/list?keyword=Phuket&checkin=2027-01-26&checkout=2027-01-30&adult=2)
 
 ### Bangkok · 30 Jan–1 Feb
+
+**Baiyoke Sky Hotel · 7 people · booked**
 
 - [Booking](https://www.booking.com/searchresults.html?ss=Bangkok&checkin=2027-01-30&checkout=2027-02-01&group_adults=2)
 - [Agoda](https://www.agoda.com/search?textToSearch=Bangkok&checkIn=2027-01-30&checkOut=2027-02-01&adults=2&rooms=1)
