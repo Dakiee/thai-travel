@@ -504,3 +504,46 @@ footer{border-color:#cfd8d0;color:var(--deep)}
   .stays-page #stay-cards{grid-template-columns:1fr 1fr}
   .stays-page #stay-cards>.stay-card:nth-child(n){grid-column:auto;display:block}
 }
+
+/* ── Mobile corrections: header/tab bar, chip rows, travel-day table ────── */
+
+@media screen and (max-width:780px){
+  /* The header stacks the brand over the tab row, so it has to size to its
+     content: the fixed height above let the tabs spill past its bottom edge. */
+  html{scroll-padding-top:116px}
+  .site-header{height:auto;align-items:center;gap:9px 14px;padding-top:10px;padding-bottom:9px}
+  .site-header>button{min-height:40px}
+  /* Equal-width tabs so all five always fit — no clipped "Budget", no
+     sideways scroll that can hide the current page's own tab. */
+  .site-header>nav{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:4px;padding:0;overflow:visible;font-size:clamp(9px,2.7vw,11px)}
+  .site-header>nav a{display:flex;min-width:0;min-height:38px;align-items:center;justify-content:center;padding:8px 4px;text-align:center;white-space:nowrap}
+  /* Chip rows wrap rather than hiding their last chips off the right edge. */
+  .trip-map-jump{flex-wrap:wrap;overflow:visible;padding-bottom:0}
+  .trip-map-jump button{flex:0 1 auto}
+  /* Finger-sized hit areas for the small source and booking links. */
+  .day-source-links{gap:2px 14px}
+  .day-source-links a,.fare-source-link,.stay-photo figcaption a,.footer-brand{display:inline-flex;align-items:center;min-height:30px}
+  .stay-links a{display:flex;align-items:center;justify-content:center;min-height:38px}
+  .budget-style select{min-height:38px}
+}
+
+@media screen and (max-width:600px){
+  /* Four table columns cannot fit a phone, so each travel day becomes a row
+     card instead of a table that scrolls its cost column out of sight. */
+  .flight-table-wrap{overflow:visible}
+  .flight-table-wrap table,.flight-table-wrap tbody,.flight-table-wrap tr,.flight-table-wrap td{display:block;width:100%}
+  .flight-table-wrap thead{display:none}
+  .flight-table-wrap tr{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1px 12px;padding:14px 16px;border-top:1px solid var(--line)}
+  .flight-table-wrap tbody tr:first-child{border-top:0}
+  .flight-table-wrap td{padding:0;border:0;white-space:normal}
+  .flight-table-wrap td:nth-child(1){grid-area:1/1;color:var(--muted);font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+  .flight-table-wrap td:nth-child(3){grid-area:1/2;justify-self:end;color:var(--green);font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+  .flight-table-wrap td:nth-child(2){grid-area:2/1/auto/-1;font-size:14px;font-weight:650}
+  .flight-table-wrap td:nth-child(4){grid-area:3/1/auto/-1;margin-top:5px;font-size:13px;font-weight:700}
+  .flight-table-wrap td small{margin-top:2px;font-weight:400}
+}
+
+@media screen and (max-width:780px){
+  .budget-notes .text-button{min-height:38px}
+  .print-transfer-list a,.print-stay a,.print-sources a{display:inline-flex;align-items:center;min-height:30px}
+}
