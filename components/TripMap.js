@@ -129,7 +129,6 @@ export default function TripMap() {
       </div>
       <ul className="trip-map-legend" aria-label="Map legend">
         <li><span className="map-dot hotel" />Hotel</li>
-        <li><span className="map-dot hotel pending" />Hotel not booked</li>
         <li><span className="map-dot pier" />Pier</li>
         <li><span className="map-dot airport" />Airport</li>
         <li><span className="map-line ferry" />Ferry</li>

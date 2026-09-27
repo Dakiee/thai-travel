@@ -146,15 +146,12 @@ body:has(.print-document){background:#e9e4da}
 .stay-photo{position:relative;height:190px;margin:0;background:#dfe5dc;overflow:hidden}
 .stay-photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
 .stay-card:hover .stay-photo img{transform:scale(1.025)}
-.stay-photo figcaption{position:absolute;right:9px;bottom:8px;padding:4px 7px;border-radius:5px;background:#18221dcc;color:#fff;font-size:7px;letter-spacing:.15px}
-.stay-photo figcaption a{text-decoration:underline;text-underline-offset:2px}
 .stay-photo-placeholder{height:190px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;background:linear-gradient(145deg,#e8eee3,#f7edda);color:var(--green);font-size:10px}
 .stay-photo-placeholder svg{width:34px;height:34px}
 .stay-card-body{display:flex;flex:1;flex-direction:column;padding:24px}
 .stay-card-body>.eyebrow{display:block;font-size:8px;margin-bottom:11px}
 .stay-card-body h3{min-height:49px;margin-bottom:10px}
 .stay-card-body .stay-description{color:var(--muted);font-size:11px;line-height:1.75}
-.stay-booking-note{margin-top:14px;padding:12px 13px;border-radius:8px;background:#f2f3ec;color:#5f695d;font-size:10px;line-height:1.65}
 .stay-card-body .stay-links{margin-top:auto;padding-top:18px}
 
 /* Interactive trip map */
@@ -214,7 +211,6 @@ body:has(.print-document){background:#e9e4da}
 @media print{
   .trip-map-section{display:none}
   .stay-photo,.stay-photo-placeholder{height:120px}
-  .stay-photo figcaption{display:none}
 }
 
 /* 2027 tropical editorial refresh */
@@ -301,13 +297,11 @@ nav a.active{background:var(--deep);color:#fff;text-decoration:none}
 
 .stay-card{border-radius:17px}
 .stay-photo:after{content:'';position:absolute;inset:55% 0 0;background:linear-gradient(transparent,#102f2c77);pointer-events:none}
-.stay-photo figcaption{z-index:1;background:#123d3ddd}
 .stay-card-top .stay-icon{background:#e3efea;color:var(--green);box-shadow:inset 0 0 0 1px #cfdfd7}
 .stay-status.booked{background:#dcecdf;color:#275f43}
 .stay-status.pending{background:#f8e5c6;color:#895b25}
 .stay-card.pending-stay{background:#fffaf0;border-color:#dfcda9}
 .stay-photo-placeholder{background:linear-gradient(145deg,#dfeee9,#f8e5c8);color:var(--ocean)}
-.stay-booking-note{background:#eef3ee;border-left:3px solid var(--ocean)}
 .stay-links a{border-color:#d5ddd4;background:#fff}
 .stay-links a:hover{border-color:#85b7ad;background:#e9f3ef}
 
@@ -522,7 +516,7 @@ footer{border-color:#cfd8d0;color:var(--deep)}
   .trip-map-jump button{flex:0 1 auto}
   /* Finger-sized hit areas for the small source and booking links. */
   .day-source-links{gap:2px 14px}
-  .day-source-links a,.fare-source-link,.stay-photo figcaption a,.footer-brand{display:inline-flex;align-items:center;min-height:30px}
+  .day-source-links a,.fare-source-link,.footer-brand{display:inline-flex;align-items:center;min-height:30px}
   .stay-links a{display:flex;align-items:center;justify-content:center;min-height:38px}
   .budget-style select{min-height:38px}
 }

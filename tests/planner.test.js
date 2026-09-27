@@ -25,17 +25,17 @@ test('booked hotels and changing group size are attached to each stay', () => {
     ['ibis Styles Krabi Ao Nang', 5, null],
     ['Rattana Resort, Lanta Noi', 5, null],
     ['Phi Phi Don Chukit Resort', 7, '5 → 7 people'],
-    [null, 7, null],
+    ['Ultra 360* Sky-Villa Penthouse', 7, null],
     ['Baiyoke Sky Hotel', 7, null]
   ]);
-  assert.ok(stops.filter(stop => stop.hotel).every(stop => stop.image && stop.imageAlt && stop.imageCreditUrl));
+  assert.ok(stops.filter(stop => stop.hotel).every(stop => stop.image && stop.imageAlt));
 });
 
 test('trip map contains hotels, piers, airports and every door-to-door connection', () => {
   assert.equal(places.filter(place => place.type === 'hotel').length, 6);
   assert.equal(places.filter(place => place.type === 'pier').length, 4);
   assert.equal(places.filter(place => place.type === 'airport').length, 3);
-  assert.equal(places.find(place => place.id === 'kata').tbd, true);
+  assert.ok(places.every(place => !place.tbd));
   assert.equal(legs.length, 15);
   assert.deepEqual(legs.reduce((counts, leg) => ({ ...counts, [leg[2]]: (counts[leg[2]] || 0) + 1 }), {}), {
     ground: 9, flight: 2, ferry: 3, walk: 1

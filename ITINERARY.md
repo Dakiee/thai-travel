@@ -8,12 +8,12 @@
 | Ao Nang (Krabi) | ibis Styles Krabi Ao Nang | 5 | 3 | 19–22 Jan |
 | Koh Lanta | Rattana Resort, Lanta Noi | 5 | 2 | 22–24 Jan |
 | Koh Phi Phi | Phi Phi Don Chukit Resort | 5 → 7 | 2 | 24–26 Jan |
-| Phuket | To be added | 7 | 4 | 26–30 Jan |
+| Phuket | Ultra 360* Sky-Villa Penthouse, Kamala Beach | 7 | 4 | 26–30 Jan |
 | Bangkok | Baiyoke Sky Hotel | 7 | 2 | 30 Jan–1 Feb |
 
 ## Accommodation
 
-The named hotels below are booked. Phuket hotel details have not been added yet.
+All six hotels below are booked.
 
 ### Bangkok · 16–19 Jan
 
@@ -53,7 +53,7 @@ The named hotels below are booked. Phuket hotel details have not been added yet.
 
 ### Phuket · 26–30 Jan
 
-**Hotel details pending · 7 people**
+**Ultra 360* Sky-Villa Penthouse, Kamala Beach · 7 people · booked**
 
 - [Booking](https://www.booking.com/searchresults.html?ss=Phuket&checkin=2027-01-26&checkout=2027-01-30&group_adults=2)
 - [Agoda](https://www.agoda.com/search?textToSearch=Phuket&checkIn=2027-01-26&checkOut=2027-01-30&adults=2&rooms=1)
@@ -96,71 +96,71 @@ Hotel, international flight and daily spending amounts are allowances. Optional 
 
 ## Day by day
 
-### 16 Jan · Bangkok — Arrival
+### 16 Jan (Sat) · Bangkok — Arrival
 
-Fly Ulaanbaatar to Bangkok, transfer to the hotel, and keep the evening easy.
+Fly Ulaanbaatar to Bangkok. Pick up a SIM and some baht at the airport, then take the Airport Rail Link to Ratchaprarop (or a van for five with bags) to Hotel Ordinary. Have street food around Pratunam and get an early night.
 
-### 17 Jan · Bangkok — Temples and riverside
+### 17 Jan (Sun) · Bangkok — Canals, Talat Noi and Chinatown
 
-Visit the Grand Palace and Wat Pho, then take a public river boat and enjoy the riverside at dusk.
+Take a short canal ride, walk through Talat Noi, and finish with a Yaowarat food crawl. Sunday suits it, because many Chinatown stalls close on Mondays.
 
-### 18 Jan · Bangkok — Canals, Talat Noi and Chinatown
+### 18 Jan (Mon) · Bangkok — Temples and riverside
 
-Take a short canal ride, walk through Talat Noi, and finish with a self-guided Yaowarat food crawl.
+Visit the Grand Palace and Wat Pho, cross to Wat Arun for the late light, then take a river boat at dusk.
 
-### 19 Jan · Ao Nang — Fly south
+### 19 Jan (Tue) · Ao Nang — Fly south
 
 Fly Bangkok to Krabi, arrange the airport transfer to Ao Nang, and check in for three nights.
 
-### 20 Jan · Ao Nang — Railay
+### 20 Jan (Wed) · Ao Nang — Railay
 
 Take a shared longtail boat to Railay and Phra Nang, returning to Ao Nang before dark.
 
-### 21 Jan · Ao Nang — Hong Islands
+### 21 Jan (Thu) · Ao Nang — Hong Islands
 
 Use this day for a Hong Islands excursion, subject to weather and the operator’s confirmed terms.
 
-### 22 Jan · Koh Lanta — Ferry day
+### 22 Jan (Fri) · Koh Lanta — Ferry day
 
-Travel from Ao Nang to Koh Lanta, settle near Klong Dao or Long Beach, and enjoy sunset.
+Ferry from Nopparat Thara to Saladan, then cross the bridge to Rattana Resort on Lanta Noi. Spend the afternoon at the pool and have a seafood dinner in Saladan.
 
-### 23 Jan · Koh Lanta — Beach day
+### 23 Jan (Sat) · Koh Lanta — Long Beach and Old Town
 
-Keep the day slow: breakfast, swimming, pool time and a beachside dinner.
+Lanta Noi has no real beach, so take a tuk-tuk or motorbikes to Long Beach on Lanta Yai. Lanta Old Town is optional. Stay for the sunset.
 
-### 24 Jan · Koh Phi Phi — Ferry day
+### 24 Jan (Sun) · Koh Phi Phi — Ferry day
 
-Travel from Koh Lanta to Phi Phi, check in, and explore the village and nearby beach.
+Ferry to Tonsai Pier, walk to Don Chukit Resort, and climb to the Phi Phi Viewpoint for sunset.
 
-### 25 Jan · Koh Phi Phi — Island views
+### 25 Jan (Mon) · Koh Phi Phi — Maya Bay and the lagoons
 
-Explore early, visit the viewpoint if desired, and leave time for the beach.
+Take an early boat to Maya Bay, Pileh Lagoon and Viking Cave (optional; about THB 800–1,500 plus a THB 400 park fee). Welcome the two new arrivals, then have dinner in the village for all seven.
 
-### 26 Jan · Phuket — Ferry day
+### 26 Jan (Tue) · Phuket — Ferry day
 
-Sail from Phi Phi to Phuket, confirm the arrival pier, and transfer to the hotel for four nights.
+Sail to Rassada Pier and take a van for seven to the Sky-Villa in Kamala. Watch the sunset from the terrace.
 
-### 27 Jan · Phuket — Old Town or beach
+### 27 Jan (Wed) · Phuket — Settle into Kamala
 
-Choose Phuket Old Town and cafés or an easy beach day near the hotel.
+Spend the day at Kamala Beach and the Laem Sing cove, then have a beachfront dinner. Phuket FantaSea is nearby if you want an evening show.
 
-### 28 Jan · Phuket — Explore
+### 28 Jan (Thu) · Phuket — Old Town and the southern capes
 
-Combine Old Town, a viewpoint or museum, and an unhurried local dinner.
+Hire a day van for Old Town, the Big Buddha and Karon Viewpoint, then catch sunset at Promthep Cape and have dinner in Rawai.
 
-### 29 Jan · Phuket — Final island day
+### 29 Jan (Fri) · Phuket — Final island day
 
-Swim, rest, watch sunset, and confirm the next day’s airport transfer.
+Go to Surin or Kamala beach, get a massage, and watch a last sunset from the villa. Confirm the airport van.
 
-### 30 Jan · Bangkok — Fly back
+### 30 Jan (Sat) · Bangkok — Fly back
 
-Fly Phuket to Bangkok and check in for the final two-night stay.
+Fly Phuket to Suvarnabhumi if possible, take the Airport Rail Link to Baiyoke Sky, and have dinner in Pratunam.
 
-### 31 Jan · Bangkok — Final day
+### 31 Jan (Sun) · Bangkok — Final day
 
-Choose a market, museum or favorite neighborhood; leave time for shopping and packing.
+Go to Chatuchak Weekend Market in the morning, shop in Pratunam in the afternoon, and end with a farewell view from Baiyoke Sky’s observation deck.
 
-### 1 Feb · Ulaanbaatar — Home
+### 1 Feb (Mon) · Ulaanbaatar — Home
 
 Leave ample time for the airport and fly home on the confirmed international itinerary.
 

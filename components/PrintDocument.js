@@ -27,7 +27,7 @@ export default function PrintDocument() {
 
       <section className="print-section print-page-break">
         <div className="print-section-heading"><span>02</span><div><p className="eyebrow green">PLACES TO STAY</p><h2>Our booked hotels.</h2></div></div>
-        <p className="print-lead">The named properties are booked. Phuket hotel details are still pending.</p>
+        <p className="print-lead">All six properties are booked.</p>
         <div className="print-stay-grid">{P.stops.map(stop => <article className="print-stay" key={`${stop.city}-${stop.offset}`}><div><h3>{stop.city}</h3><p>{dateLabel(stop.offset)} → {dateLabel(stop.offset + stop.nights)} · {stop.nights} nights</p></div><strong>{stop.hotel || 'Hotel pending'}<small> · {stop.hotel ? 'booked' : 'not yet added'}</small></strong><p>{stop.guestNote || `${stop.guests} people`} · {stop.area}</p>{!stop.hotel && <div>{Object.entries(stop.links).map(([name, url]) => <a href={url} target="_blank" rel="noopener noreferrer" key={name}>{name} ↗</a>)}</div>}</article>)}</div>
       </section>
 
