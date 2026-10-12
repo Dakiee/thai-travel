@@ -33,6 +33,6 @@ There is no linter or TypeScript config.
 
 - The tests assert exact numbers (for example the default `total` of 135124 THB, hotels at 28800, and per-adult transport of 5650/8900). If you change any price in `planner.js`, update the tests.
 - Route details are duplicated by hand in `README.md` (stay table), `ITINERARY.md`, `app/layout.js` metadata, and the price-notes text in `app/page.js`. Update them whenever `stops` or dates change.
-- Accommodation and 12Go links hardcode 2027 dates. Changing the start date in the UI does not update them, and the UI says so.
+- Accommodation search links hardcode 2027 dates. Changing the start date in the UI does not update them, and the UI says so.
 - `Thailand-itinerary.pdf` is an outdated artifact. The app's print/PDF action produces the current plan.
 - This directory is not a git repository.

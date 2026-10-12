@@ -31,7 +31,7 @@ The default plan runs **16 January–1 February 2027**, with 17 calendar days an
 | Ao Nang (Krabi) | ibis Styles Krabi Ao Nang | 5 | 3 | Jan 19–22 |
 | Koh Lanta | Rattana Resort, Lanta Noi | 5 | 2 | Jan 22–24 |
 | Koh Phi Phi | Phi Phi Don Chukit Resort | 5 → 7 | 2 | Jan 24–26 |
-| Phuket | Ultra 360* Sky-Villa Penthouse, Kamala Beach | 7 | 4 | Jan 26–30 |
+| Phuket | Karon Beach Pool Villa, Karon Beach | 7 | 4 | Jan 26–30 |
 | Bangkok | Baiyoke Sky Hotel | 7 | 2 | Jan 30–Feb 1 |
 
 The app is split into five routes:
@@ -39,7 +39,7 @@ The app is split into five routes:
 - `/` — trip overview, route and interactive map
 - `/itinerary` — the complete day-by-day
 - `/stays` — booked hotels, stay dates and guest counts
-- `/transport` — flights, ferries and 12Go searches
+- `/transport` — flights, ferries and travel times
 - `/budget` — the full estimate, currencies and trip settings
 
 Trip state is shared across the routes, so currency, occupancy, room count and date settings remain consistent while navigating. The app also supports browser-local settings, text export and print/PDF styles.

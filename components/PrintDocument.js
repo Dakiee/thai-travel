@@ -33,8 +33,8 @@ export default function PrintDocument() {
 
       <section className="print-section print-page-break">
         <div className="print-section-heading"><span>03</span><div><p className="eyebrow green">GETTING AROUND</p><h2>Our flights and ferries.</h2></div></div>
-        <p className="print-lead">Transport links are saved searches, not reservations. Confirm terminals, piers, baggage and local transfers.</p>
-        <div className="print-transfer-list">{P.transfers.map(transfer => <article key={transfer.id}><div className="print-transfer-date"><strong>{dateLabel(transfer.offset)}</strong><span>{transfer.mode}</span></div><div><h3>{transfer.title}</h3><p>{transfer.note}</p><a href={transfer.url} target="_blank" rel="noopener noreferrer">Open saved 12Go search ↗</a></div><strong>{priceRange(transfer.min, transfer.max)}<small> / person</small></strong></article>)}</div>
+        <p className="print-lead">Confirm terminals, piers, baggage and local transfers before each travel day.</p>
+        <div className="print-transfer-list">{P.transfers.map(transfer => <article key={transfer.id}><div className="print-transfer-date"><strong>{dateLabel(transfer.offset)}</strong><span>{transfer.mode}{transfer.booked ? ' · booked' : ''}</span></div><div><h3>{transfer.title}</h3>{transfer.time && <p>{transfer.time}</p>}</div><strong>{priceRange(transfer.min, transfer.max)}<small> / person</small></strong></article>)}</div>
       </section>
 
       <section className="print-section print-page-break">

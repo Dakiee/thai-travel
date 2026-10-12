@@ -85,7 +85,7 @@ export function TripProvider({ children }) {
         ...(!stop.hotel ? Object.entries(stop.links).map(([name, url]) => `  ${name}: ${url}`) : []),
       ]),
       '', 'OUR FLIGHTS & FERRIES — PER PERSON',
-      ...P.transfers.map(transfer => `${dateLabel(transfer.offset)} · ${transfer.title}: ${priceRange(transfer.min, transfer.max)}. ${transfer.note} Link: ${transfer.url}`),
+      ...P.transfers.map(transfer => `${dateLabel(transfer.offset)} · ${transfer.title}${transfer.time ? ` · ${transfer.time}` : ''}${transfer.booked ? ' · booked' : ''}: ${priceRange(transfer.min, transfer.max)}.`),
       `Transport estimate: ${priceRange(current.transportRange.min, current.transportRange.max)} each.`,
       '', 'OUR ROUGH BUDGET',
       `Per person: ${money(current.perPerson)} ${state.currency}`,

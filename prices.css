@@ -6,3 +6,4 @@
 
 .original-fare-price{font-size:10px;line-height:1.7;color:var(--muted);margin:5px 0 8px}.source-fare-amount{overflow-wrap:anywhere}.source-fare-amount small{display:inline-block}
 @media(max-width:360px){.source-fare-amount{font-size:29px}.hotel-source-amount{font-size:25px}}
+.fare-date .stay-status{margin-left:8px;vertical-align:1px}

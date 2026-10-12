@@ -8,7 +8,7 @@
 | Ao Nang (Krabi) | ibis Styles Krabi Ao Nang | 5 | 3 | 19–22 Jan |
 | Koh Lanta | Rattana Resort, Lanta Noi | 5 | 2 | 22–24 Jan |
 | Koh Phi Phi | Phi Phi Don Chukit Resort | 5 → 7 | 2 | 24–26 Jan |
-| Phuket | Ultra 360* Sky-Villa Penthouse, Kamala Beach | 7 | 4 | 26–30 Jan |
+| Phuket | Karon Beach Pool Villa, Karon Beach | 7 | 4 | 26–30 Jan |
 | Bangkok | Baiyoke Sky Hotel | 7 | 2 | 30 Jan–1 Feb |
 
 ## Accommodation
@@ -53,7 +53,7 @@ All six hotels below are booked.
 
 ### Phuket · 26–30 Jan
 
-**Ultra 360* Sky-Villa Penthouse, Kamala Beach · 7 people · booked**
+**Karon Beach Pool Villa, Karon Beach · 7 people · booked**
 
 - [Booking](https://www.booking.com/searchresults.html?ss=Phuket&checkin=2027-01-26&checkout=2027-01-30&group_adults=2)
 - [Agoda](https://www.agoda.com/search?textToSearch=Phuket&checkIn=2027-01-26&checkOut=2027-01-30&adults=2&rooms=1)
@@ -69,15 +69,15 @@ All six hotels below are booked.
 - [Airbnb](https://www.airbnb.com/s/Bangkok--Thailand/homes?checkin=2027-01-30&checkout=2027-02-01&adults=2)
 - [Trip](https://www.trip.com/hotels/list?keyword=Bangkok&checkin=2027-01-30&checkout=2027-02-01&adult=2)
 
-## Transport searches and allowances · per adult
+## Transport and allowances · per adult
 
-- **19 Jan · Bangkok → Krabi: THB 2,000–3,500.** [Search 12Go](https://12go.asia/en/avia/bangkok/krabi?date=2027-01-19)
-- **22 Jan · Ao Nang → Koh Lanta: THB 700.** [Search 12Go](https://12go.asia/en/ferry/ao-nang/koh-lanta?date=2027-01-22)
-- **24 Jan · Koh Lanta → Koh Phi Phi: THB 500–600.** [Search 12Go](https://12go.asia/en/travel/koh-lanta/koh-phi-phi?date=2027-01-24)
-- **26 Jan · Koh Phi Phi → Phuket: THB 450–600.** [Search 12Go](https://12go.asia/en/travel/koh-phi-phi/phuket?date=2027-01-26)
-- **30 Jan · Phuket → Bangkok: THB 2,000–3,500.** [Search 12Go](https://12go.asia/en/avia/phuket/bangkok?date=2027-01-30)
+- **19 Jan · Bangkok → Krabi: THB 2,000–3,500.**
+- **22 Jan · Ao Nang → Koh Lanta: THB 700.** Booked.
+- **24 Jan · Koh Lanta → Koh Phi Phi: THB 500–600.** Booked.
+- **26 Jan · Koh Phi Phi → Phuket: THB 450–600.** Booked.
+- **30 Jan · Phuket → Bangkok: THB 2,000–3,500.** Booked: Thai AirAsia, HKT 11:45 → DMK T2 13:10.
 
-Transport subtotal: **THB 5,650–8,900 per adult**. These are planning allowances, not confirmed fares. International flights, airport/pier transfers, baggage extras and local fees are excluded.
+Transport subtotal: **THB 5,650–8,900 per adult**. The three ferries and the Phuket flight are booked; the amounts are still planning allowances, not the fares paid. International flights, airport/pier transfers, baggage extras and local fees are excluded.
 
 ## Full trip budget · good value
 
@@ -138,11 +138,11 @@ Take an early boat to Maya Bay, Pileh Lagoon and Viking Cave (optional; about TH
 
 ### 26 Jan (Tue) · Phuket — Ferry day
 
-Sail to Rassada Pier and take a van for seven to the Sky-Villa in Kamala. Watch the sunset from the terrace.
+Sail to Rassada Pier and take a van for seven to the pool villa in Karon. Walk down to Karon Beach for sunset.
 
-### 27 Jan (Wed) · Phuket — Settle into Kamala
+### 27 Jan (Wed) · Phuket — Settle into Karon
 
-Spend the day at Kamala Beach and the Laem Sing cove, then have a beachfront dinner. Phuket FantaSea is nearby if you want an evening show.
+Spend the day at Karon Beach and Kata Beach or by the private pool, then have dinner around Karon Circle.
 
 ### 28 Jan (Thu) · Phuket — Old Town and the southern capes
 
@@ -150,11 +150,11 @@ Hire a day van for Old Town, the Big Buddha and Karon Viewpoint, then catch suns
 
 ### 29 Jan (Fri) · Phuket — Final island day
 
-Go to Surin or Kamala beach, get a massage, and watch a last sunset from the villa. Confirm the airport van.
+Go to Kata Noi or Karon Beach, get a massage, and watch a last sunset on Karon Beach. Confirm the airport van.
 
 ### 30 Jan (Sat) · Bangkok — Fly back
 
-Fly Phuket to Suvarnabhumi if possible, take the Airport Rail Link to Baiyoke Sky, and have dinner in Pratunam.
+Fly Thai AirAsia from Phuket at 11:45 to Don Mueang T2 (13:10), take two taxis or a van to Baiyoke Sky, and have dinner in Pratunam.
 
 ### 31 Jan (Sun) · Bangkok — Final day
 
@@ -166,4 +166,4 @@ Leave ample time for the airport and fly home on the confirmed international iti
 
 ## Notes
 
-The accommodation links use the supplied fixed dates, two adults and one room. The 12Go links use the five supplied transfer dates. Search results do not confirm availability, price, baggage, transfer points or cancellation terms; verify all details before paying.
+The accommodation links use the supplied fixed dates, two adults and one room. Search results do not confirm availability, price, baggage, transfer points or cancellation terms; verify all details before paying.

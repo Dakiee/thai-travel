@@ -20,7 +20,7 @@ export default function StaysPlanner() {
           {!stop.hotel && <div className="stay-links" aria-label={`Accommodation searches for ${stop.city}`}>{Object.entries(stop.links).map(([name, url]) => <a key={name} href={url} target="_blank" rel="noopener noreferrer">{name} ↗</a>)}</div>}
         </div>
       </article>)}</div>
-      <p className="footnote">The named properties are booked. Phuket accommodation has not been added to the plan yet; its saved search links use the fixed trip dates.</p>
+      <p className="footnote">All six properties are booked.</p>
     </>
   );
 }

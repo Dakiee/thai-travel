@@ -8,7 +8,7 @@ import TripMap from '../components/TripMap';
 const planPages = [
   { href: '/itinerary', icon: 'calendar', title: 'Day-by-day', text: 'All 17 days, activities, transfer notes and flexible ideas.' },
   { href: '/stays', icon: 'bed', title: 'Where we’re staying', text: 'Our booked hotels, dates and guest count for each stop.' },
-  { href: '/transport', icon: 'boat', title: 'Flights and ferries', text: 'The five travel days, saved 12Go links and rough fare ranges.' },
+  { href: '/transport', icon: 'boat', title: 'Flights and ferries', text: 'The five travel days, times and rough fare ranges.' },
   { href: '/budget', icon: 'wallet', title: 'Our budget', text: 'Per-person and total estimates, currencies and the 10% cushion.' },
 ];
 
@@ -38,7 +38,7 @@ export default function HomePage() {
       <RouteOverview />
       <TripMap />
 
-      <section className="know-section"><div className="section-heading"><div><p className="eyebrow green">THINGS TO REMEMBER</p><h2>Before we leave.</h2></div></div><div className="know-grid"><article><span><Icon name="sun" /></span><h3>Keep bookings handy</h3><p>Save every confirmation, including the Jan 26–30 Kamala Sky-Villa for seven people, offline on our phones.</p></article><article><span><Icon name="bag" /></span><h3>Pack for both ends</h3><p>Warm layers for Ulaanbaatar; light clothes, temple outfits, sun protection and a dry bag for Thailand.</p></article><article><span><Icon name="calendar" /></span><h3>Confirm every transfer</h3><p>Match the domestic flights and ferries to our hotel check-in dates, baggage and group size.</p></article><article><span><Icon name="heart" /></span><h3>Don’t over-plan it</h3><p>Keep the 10% cushion and a little empty space. Weather and energy can decide some of the beach days.</p></article></div></section>
+      <section className="know-section"><div className="section-heading"><div><p className="eyebrow green">THINGS TO REMEMBER</p><h2>Before we leave.</h2></div></div><div className="know-grid"><article><span><Icon name="sun" /></span><h3>Keep bookings handy</h3><p>Save every confirmation, including the Jan 26–30 Karon pool villa for seven people, offline on our phones.</p></article><article><span><Icon name="bag" /></span><h3>Pack for both ends</h3><p>Warm layers for Ulaanbaatar; light clothes, temple outfits, sun protection and a dry bag for Thailand.</p></article><article><span><Icon name="calendar" /></span><h3>Confirm every transfer</h3><p>Match the domestic flights and ferries to our hotel check-in dates, baggage and group size.</p></article><article><span><Icon name="heart" /></span><h3>Don’t over-plan it</h3><p>Keep the 10% cushion and a little empty space. Weather and energy can decide some of the beach days.</p></article></div></section>
     </main>
   );
 }
