@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Icon from './Icon';
 import { useTrip } from './TripProvider';
 
 const filters = [
@@ -12,14 +13,22 @@ const filters = [
   ['phuket', 'Phuket'],
 ];
 
-const colors = { hotel: '#315b8a', pier: '#167f74', airport: '#626b76' };
 const modeLabels = { flight: 'Flight', ferry: 'Ferry', ground: 'Taxi / van / rail', walk: 'Walk / porter' };
 
-function legStyle(mode) {
-  if (mode === 'ferry') return { color: '#167f74', weight: 3.5, dashArray: '9 7' };
-  if (mode === 'flight') return { color: '#626b76', weight: 2.5, dashArray: '2 8' };
-  if (mode === 'walk') return { color: '#865f78', weight: 4, dashArray: '1 7' };
-  return { color: '#a66f2c', weight: 4, dashArray: '10 5' };
+// Map colours live in the CSS token block (--map-*); Leaflet needs them as values, so read them once.
+function mapColours() {
+  const read = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  return {
+    hotel: read('--map-hotel'), pier: read('--map-pier'), airport: read('--map-airport'), ring: read('--map-ring'),
+    ferry: read('--map-ferry'), flight: read('--map-flight'), walk: read('--map-walk'), ground: read('--map-ground'),
+  };
+}
+
+function legStyle(mode, colours) {
+  if (mode === 'ferry') return { color: colours.ferry, weight: 3.5, dashArray: '9 7' };
+  if (mode === 'flight') return { color: colours.flight, weight: 2.5, dashArray: '2 8' };
+  if (mode === 'walk') return { color: colours.walk, weight: 4, dashArray: '1 7' };
+  return { color: colours.ground, weight: 4, dashArray: '10 5' };
 }
 
 function popupContent(place) {
@@ -71,11 +80,12 @@ export default function TripMap() {
       });
       primaryTiles.addTo(map);
 
+      const colours = mapColours();
       const byId = Object.fromEntries(P.places.map(place => [place.id, place]));
       P.legs.forEach(([fromId, toId, mode, label]) => {
         const from = byId[fromId];
         const to = byId[toId];
-        const line = L.polyline([[from.lat, from.lng], [to.lat, to.lng]], legStyle(mode)).addTo(map);
+        const line = L.polyline([[from.lat, from.lng], [to.lat, to.lng]], legStyle(mode, colours)).addTo(map);
         line.bindTooltip(label, { sticky: true });
         line.bindPopup(`<div class="trip-map-popup"><strong>${modeLabels[mode]}</strong><p>${label}</p></div>`);
       });
@@ -83,9 +93,9 @@ export default function TripMap() {
       P.places.forEach(place => {
         L.circleMarker([place.lat, place.lng], {
           radius: place.type === 'hotel' ? 9 : 7,
-          color: place.tbd ? colors.hotel : '#fffdf9',
+          color: place.tbd ? colours.hotel : colours.ring,
           weight: 2.5,
-          fillColor: colors[place.type],
+          fillColor: colours[place.type],
           fillOpacity: place.tbd ? 0.12 : 1,
           dashArray: place.tbd ? '3 3' : null,
         })
@@ -119,7 +129,8 @@ export default function TripMap() {
 
   return (
     <section className="trip-map-section" aria-labelledby="trip-map-title">
-      <div className="section-heading"><div><p className="eyebrow green">HOTELS, PIERS & AIRPORTS</p><h2 id="trip-map-title">Where everything is.</h2></div><p>Tap a pin for dates and practical notes.</p></div>
+      <div className="container trip-map__head"><h2 id="trip-map-title">Where everything is.</h2><p className="lead">Hotels, piers and airports. Tap a pin for dates and practical notes.</p></div>
+      <div className="container trip-map__body">
       <div className="trip-map-jump" role="group" aria-label="Zoom to a stop">
         {filters.map(([id, label]) => <button key={id} type="button" aria-controls="trip-map" aria-pressed={activeStop === id} onClick={() => showStop(id)}>{label}</button>)}
       </div>
@@ -137,9 +148,10 @@ export default function TripMap() {
         <li><span className="map-line walk" />Walk / porter</li>
       </ul>
       <details className="trip-map-connections">
-        <summary>All {P.legs.length} mapped connections</summary>
+        <summary>All {P.legs.length} mapped connections<Icon name="chevron" /></summary>
         <ol>{P.legs.map(([from, to, mode, label], index) => <li key={`${from}-${to}-${index}`}><span className={`connection-mode ${mode}`}>{modeLabels[mode]}</span><p>{label}</p></li>)}</ol>
       </details>
+      </div>
     </section>
   );
 }

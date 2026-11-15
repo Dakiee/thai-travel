@@ -1,0 +1,31 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "site",
+  "shape": "Marquee Hero",
+  "theme": "refract",
+  "axes": "light/grotesk-sans/cool",
+  "hero": "Poster",
+  "nav": "edge-aligned",
+  "footer": "statement",
+  "imagery": "photographs, the user's own (hero, Bangkok, six hotels)",
+  "photos": [],
+  "entry": "draw ed78db",
+  "fingerprint": "light/grotesk-sans/cool · Poster · edge-aligned · statement · lanes · photographs",
+  "sections": [
+   "Hero (Poster)",
+   "Figures",
+   "Lanes (the route)",
+   "Split (Bangkok photo)",
+   "Index (plan pages)",
+   "Map",
+   "Rows (before we leave)",
+   "Footer (statement over the water)"
+  ],
+  "signature": "the route as lanes, six stays as ruled rows, dates in display figures, next stay lit",
+  "waived": [],
+  "prompt": "a shared trip plan for friends travelling from Ulaanbaatar to Bangkok and the Andaman islands",
+  "date": "2026-11-15"
+ }
+]

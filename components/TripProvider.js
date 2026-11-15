@@ -119,13 +119,13 @@ export function TripProvider({ children }) {
       {children}
       <dialog ref={dialogRef} aria-labelledby="settings-title" onClick={event => { if (event.target === dialogRef.current) dialogRef.current.close(); }}>
         <form onSubmit={saveSettings}>
-          <div className="dialog-heading"><div><p className="eyebrow green">EDIT OUR PLAN</p><h2 id="settings-title">Trip settings.</h2></div><button className="icon-button" type="button" onClick={() => dialogRef.current?.close()} aria-label="Close settings">×</button></div>
+          <div className="dialog-heading"><h2 id="settings-title">Trip settings.</h2><button className="icon-button" type="button" onClick={() => dialogRef.current?.close()} aria-label="Close settings"><Icon name="plus" className="icon-close" /></button></div>
           <p>Adjust our dates, room split and working exchange rates. The saved booking links keep their original dates.</p>
           <label>Departure date in January 2027<input type="date" min="2027-01-01" max="2027-01-31" required value={draft.start} onChange={event => setDraft(value => ({ ...value, start: event.target.value }))} /></label>
-          <label>Rooms <small>Maximum two adults per room</small><input type="number" min={Math.ceil(state.adults / 2)} max={state.adults} required value={draft.rooms} onChange={event => setDraft(value => ({ ...value, rooms: event.target.value }))} /></label>
+          <label>Rooms<small>Maximum two adults per room</small><input type="number" min={Math.ceil(state.adults / 2)} max={state.adults} required value={draft.rooms} onChange={event => setDraft(value => ({ ...value, rooms: event.target.value }))} /></label>
           <div className="form-grid"><label>THB for 1 USD<input type="number" min="1" max="1000" step="0.01" required value={draft.usdRate} onChange={event => setDraft(value => ({ ...value, usdRate: event.target.value }))} /></label><label>MNT for 1 THB<input type="number" min="1" max="10000" step="0.01" required value={draft.mntRate} onChange={event => setDraft(value => ({ ...value, mntRate: event.target.value }))} /></label></div>
           <p className="footnote">Our default assumptions: USD 1 = THB 35; THB 1 = MNT 100. These are planning rates, not live exchange rates.</p>
-          <button className="button green-button full" type="submit">Update our plan <Icon name="arrow-up-right" /></button>
+          <button className="btn btn--primary btn--full" type="submit">Update our plan</button>
         </form>
       </dialog>
       <div className={`toast ${toast ? 'visible' : ''}`} role="status" aria-live="polite">{toast}</div>

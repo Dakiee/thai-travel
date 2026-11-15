@@ -13,5 +13,5 @@ const links = [
 
 export default function SiteNav() {
   const pathname = usePathname();
-  return <nav aria-label="Main navigation">{links.map(([href, label]) => <Link key={href} className={pathname === href ? 'active' : ''} aria-current={pathname === href ? 'page' : undefined} href={href}>{label}</Link>)}</nav>;
+  return <nav className="site-nav" aria-label="Main navigation">{links.map(([href, label]) => <Link key={href} className={pathname === href ? 'active' : ''} aria-current={pathname === href ? 'page' : undefined} href={href}>{label}</Link>)}</nav>;
 }
